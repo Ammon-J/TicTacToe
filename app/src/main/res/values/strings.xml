@@ -1,14 +1,14 @@
 <resources>
     <string name="app_name">TicTacToe</string>
-    <string name="button">Button</string>
-    <string name="button1">Button</string>
-    <string name="button2">Button</string>
-    <string name="button3">Button</string>
-    <string name="button6">Button</string>
-    <string name="button7">Button</string>
-    <string name="button5">Button</string>
-    <string name="button9">Button</string>
-    <string name="button8">Button</string>
+    <string name="button"></string>
+    <string name="button1"></string>
+    <string name="button2"></string>
+    <string name="button3"></string>
+    <string name="button6"></string>
+    <string name="button7"></string>
+    <string name="button5"></string>
+    <string name="button9"></string>
+    <string name="button8"></string>
     <string name="player_turn">Player turn</string>
-    <string name="newGame">Button</string>
+    <string name="newGame">New Game</string>
 </resources>
