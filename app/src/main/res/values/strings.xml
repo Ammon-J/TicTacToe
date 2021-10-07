@@ -9,4 +9,6 @@
     <string name="button5">Button</string>
     <string name="button9">Button</string>
     <string name="button8">Button</string>
+    <string name="player_turn">Player turn</string>
+    <string name="newGame">Button</string>
 </resources>
