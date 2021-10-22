@@ -43,16 +43,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClick(View view) {
-        String button1Txt = button1.getText().toString();
-        String button2Txt = button2.getText().toString();
-        String button3Txt = button3.getText().toString();
-        String button4Txt = button4.getText().toString();
-        String button5Txt = button5.getText().toString();
-        String button6Txt = button6.getText().toString();
-        String button7Txt = button6.getText().toString();
-        String button8Txt = button8.getText().toString();
-        String button9Txt = button9.getText().toString();
-
         Button[] allButtons = {button1, button2, button3, button4, button5, button6, button7, button8, button9};
         Boolean isBtnFound = false; // Is the clicked button found
         Button clickedBtn = button1; // The found button that was clicked. button1 is set just for the beginning
