@@ -154,6 +154,21 @@ public class MainActivity extends AppCompatActivity {
             playerTxtView.setText("Player O wins!");
             disableAllButtons();
         }
+
+        else if(allButtonsHaveText(buttons)) {
+            playerTxtView.setText("Its a Tie!");
+            disableAllButtons();
+        }
+    }
+
+    public boolean allButtonsHaveText(Button[] buttons) {
+        for(int i  = 0; i < buttons.length; i++) {
+            if(buttons[i].getText().toString() == "") {
+                return false;
+            }
+        }
+
+        return true;
     }
 
     public void disableAllButtons() {
