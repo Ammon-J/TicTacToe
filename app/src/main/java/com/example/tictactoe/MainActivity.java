@@ -70,6 +70,114 @@ public class MainActivity extends AppCompatActivity {
          if(view.equals((newGame))) {
              resetGame();
          }
+
+         playGame(allButtons);
+    }
+
+    public void playGame(Button[] buttons) {
+        if(buttons[0].getText().toString() == "X" && buttons[1].getText().toString() == "X" && buttons[2].getText().toString() == "X") {
+            playerTxtView.setText("Player X wins!");
+            disableAllButtons();
+        }
+
+        else if(buttons[0].getText().toString() == "O" && buttons[1].getText().toString() == "O" && buttons[2].getText().toString() == "O") {
+            playerTxtView.setText("Player O wins!");
+            disableAllButtons();
+        }
+
+        else if(buttons[3].getText().toString() == "X" && buttons[4].getText().toString() == "X" && buttons[5].getText().toString() == "X") {
+            playerTxtView.setText("Player X wins!");
+            disableAllButtons();
+        }
+
+        else if(buttons[3].getText().toString() == "O" && buttons[4].getText().toString() == "O" && buttons[5].getText().toString() == "O") {
+            playerTxtView.setText("Player O wins!");
+            disableAllButtons();
+        }
+
+        else if(buttons[6].getText().toString() == "X" && buttons[7].getText().toString() == "X" && buttons[8].getText().toString() == "X") {
+            playerTxtView.setText("Player X wins!");
+            disableAllButtons();
+        }
+
+        else if(buttons[6].getText().toString() == "O" && buttons[7].getText().toString() == "O" && buttons[8].getText().toString() == "O") {
+            playerTxtView.setText("Player O wins!");
+            disableAllButtons();
+        }
+
+        else if(buttons[0].getText().toString() == "X" && buttons[3].getText().toString() == "X" && buttons[6].getText().toString() == "X") {
+            playerTxtView.setText("Player X wins!");
+            disableAllButtons();
+        }
+
+        else if(buttons[0].getText().toString() == "O" && buttons[3].getText().toString() == "O" && buttons[6].getText().toString() == "O") {
+            playerTxtView.setText("Player O wins!");
+            disableAllButtons();
+        }
+
+        else if(buttons[1].getText().toString() == "X" && buttons[4].getText().toString() == "X" && buttons[7].getText().toString() == "X") {
+            playerTxtView.setText("Player X wins!");
+            disableAllButtons();
+        }
+
+        else if(buttons[0].getText().toString() == "O" && buttons[3].getText().toString() == "O" && buttons[7].getText().toString() == "O") {
+            playerTxtView.setText("Player O wins!");
+            disableAllButtons();
+        }
+
+        else if(buttons[2].getText().toString() == "X" && buttons[5].getText().toString() == "X" && buttons[8].getText().toString() == "X") {
+            playerTxtView.setText("Player X wins!");
+            disableAllButtons();
+        }
+
+        else if(buttons[2].getText().toString() == "O" && buttons[5].getText().toString() == "O" && buttons[8].getText().toString() == "O") {
+            playerTxtView.setText("Player O wins!");
+            disableAllButtons();
+        }
+
+        else if(buttons[0].getText().toString() == "X" && buttons[4].getText().toString() == "X" && buttons[8].getText().toString() == "X") {
+            playerTxtView.setText("Player X wins!");
+            disableAllButtons();
+        }
+
+        else if(buttons[0].getText().toString() == "O" && buttons[4].getText().toString() == "O" && buttons[8].getText().toString() == "O") {
+            playerTxtView.setText("Player O wins!");
+            disableAllButtons();
+        }
+
+        else if(buttons[2].getText().toString() == "X" && buttons[4].getText().toString() == "X" && buttons[6].getText().toString() == "X") {
+            playerTxtView.setText("Player X wins!");
+            disableAllButtons();
+        }
+
+        else if(buttons[2].getText().toString() == "O" && buttons[4].getText().toString() == "O" && buttons[6].getText().toString() == "O") {
+            playerTxtView.setText("Player O wins!");
+            disableAllButtons();
+        }
+    }
+
+    public void disableAllButtons() {
+        button1.setEnabled(false);
+        button2.setEnabled(false);
+        button3.setEnabled(false);
+        button4.setEnabled(false);
+        button5.setEnabled(false);
+        button6.setEnabled(false);
+        button7.setEnabled(false);
+        button8.setEnabled(false);
+        button9.setEnabled(false);
+    }
+
+    public void enableAllButtons() {
+        button1.setEnabled(true);
+        button2.setEnabled(true);
+        button3.setEnabled(true);
+        button4.setEnabled(true);
+        button5.setEnabled(true);
+        button6.setEnabled(true);
+        button7.setEnabled(true);
+        button8.setEnabled(true);
+        button9.setEnabled(true);
     }
 
     public void resetGame() {
@@ -84,5 +192,7 @@ public class MainActivity extends AppCompatActivity {
         button8.setText("");
         button9.setText("");
         playerTxtView.setText("Player " + turn + "'s Turn");
+
+        enableAllButtons();
     }
 }
